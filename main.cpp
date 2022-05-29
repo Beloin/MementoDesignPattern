@@ -19,7 +19,9 @@ int main () {
     cout << "2: ";
     holder2->show(cout);
 
+    cout << "Changing 1 to (67, 12)" << endl;
     holder1->move(new Point(67, 12));
+    cout << "Changing 2 to (55, 55)" << endl;
     holder2->move(new Point(55, 55));
 
     cout << "1: ";
@@ -27,7 +29,9 @@ int main () {
     cout << "2: ";
     holder2->show(cout);
 
+    cout << "Undo 1" << endl;
     holder1->undo();
+    cout << "Undo 2" << endl;
     holder2->undo();
 
     cout << "1: ";
